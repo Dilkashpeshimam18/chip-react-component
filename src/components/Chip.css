@@ -1,0 +1,133 @@
+
+  .chip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 550px;
+    height: 300px;
+    background-color: rgb(243, 243, 243);
+  }
+  .chips {
+    min-height: 36px;
+    border-bottom: 2px solid rgb(101, 209, 255);
+    line-height: 1;
+    font-size: 1em;
+    width: 500px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .chips-input {
+    display: inline-block;
+    width: 40%;
+    min-height: 36px;
+    margin-bottom: 5px    ;
+    margin-left:20px;
+    border: 0;
+    outline: none;
+    font-size: 0.9rem;
+    background-color: rgb(243, 243, 243);
+
+  }
+
+  .item-list {
+    max-height: 200px; 
+    background-color: white;
+    overflow-y: scroll; 
+  }
+  
+  .item-list::-webkit-scrollbar {
+    width: 0.1em; 
+  }
+  
+  .item-list::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+  }
+  
+  .item-list::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+    
+  .item {
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .item:hover {
+    background-color: #e0e0e0;
+  }
+  .itemList-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+  .chip-remove {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #fff;
+
+  }
+  
+  .chip {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 32px;
+  
+    margin: 12px;
+    position: relative;
+    background-color: #969696;
+    padding: 4px;
+    padding-right: 8px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.chip-value {
+  display: inline-block;
+  padding:5px;
+  padding-left: 15px;
+  padding-right: 15px / 2;
+  background: #969696;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px 0 0 15px;
+  font-size: 11px;
+}
+
+.chip-delete-button {
+  background: #969696;
+  color: #fff;
+  border: 0;
+  border-radius: 0 15px 15px 0;
+  padding: 5px 5px * 2;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -15px + 5px * 2;
+  line-height: 0.5;
+  font-weight: bold;
+}
+
+.highlighted{
+  background-color: black;
+  color: #fff;
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .chip-container {
+    width: 300px;
+  }
+  .chips{
+    width: 280px;
+  }
+}
